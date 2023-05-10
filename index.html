@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+
+  <div class="top">
+    <h1 id="title">Where to next?</h1>
+    <p id="description">Let us know your favorite kind of travel!</p>
+  </div>
+    
+    <div class="form">
+      <form id="survey-form" method="post" action="">
+        <div class="form-inputs">
+          <fieldset>
+
+            <label id="name-label"><b>Name</b><input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+
+            <label id="email-label"><b>Email</b><input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+
+            <label id="number-label"><b>Age (optional)</b><input id="number" name="age" type="number" min="13" max="120" placeholder="Age" /></label>
+
+            <label for="dropdown"><b>Which kind of traveler are you?</b>
+              <select id="dropdown" name="kind-of-traveller">
+                <option value="select-one" disabled selected hidden>Select an option</option>
+                <option value="adventure">Adventure Searcher</option>
+                <option value="cultural">Cultural Explorer</option>
+                <option value="nature">Nature Lover</option>
+                <option value="comfy">Comfy Traveler</option>
+                <option value="food">Culinary Enthusiast</option>
+                <option value="business">Business Traveler</option>
+              </select>
+            </label>
+
+          </fieldset>
+
+          <fieldset>
+            <label for="travel-abroad-yes"><b>Have you ever traveled abroad?</b><br><br>
+              <input id="travel-abroad-yes" value="travel-abroad-yes" name="abroad" type="radio" class="inline" /> Yes
+            </label>
+
+            <label for="travel-abroad-no">
+              <input id="travel-abroad-no" name="abroad" value="travel-abroad-no"type="radio" class="inline" /> No
+            </label>
+            </fieldset>
+
+            <fieldset>
+            <label for="top-destinations1"><b>Choose your top 5 destinations</b><br><br>
+              <input id="top-destinations1" value="top-destinations1" name="paris" type="checkbox" class="inline" /> Paris, France
+            </label>
+            <label for="top-destinations2">
+              <input id="top-destinations2" value="top-destinations2" name="bali" type="checkbox" class="inline" />Bali, Indonesia
+            </label>
+            <label for="top-destinations3">
+              <input id="top-destinations3" value="top-destinations3" name="rome" type="checkbox" class="inline" />Rome, Italy
+            </label>
+            <label for="top-destinations4">
+              <input id="top-destinations4" value="top-destinations4" name="tokyo" type="checkbox" class="inline" />Tokyo, Japan
+            </label>
+            <label for="top-destinations5">
+              <input id="top-destinations5" value="top-destinations5" name="marrakech" type="checkbox" class="inline" />Marrakech, Morroco
+            </label>
+            <label for="top-destinations6">
+              <input id="top-destinations6" value="top-destinations6" name="cape-town" type="checkbox" class="inline" />Cape Town, South Africa
+            </label>
+            <label for="top-destinations7">
+              <input id="top-destinations7" value="top-destinations7" name="ny" type="checkbox" class="inline" />New York, USA
+            </label>
+            <label for="top-destinations8">
+              <input id="top-destinations8" value="top-destinations8" name="rj" type="checkbox" class="inline" />Rio de Janeiro, Brazil
+            </label>
+            <label for="top-destinations9">
+              <input id="top-destinations9" value="top-destinations9" name="sydney" type="checkbox" class="inline" />Sydney, Australia
+            </label>
+            <label for="top-destinations10">
+              <input id="top-destinations10" value="top-destinations10" name="santorini" type="checkbox" class="inline" />Santorini, Greece
+            </label>
+
+            <label for="tell-me"><b>Tell me about your ideal trip</b>
+              <textarea id="tell-me" name="tell-me" placeholder="I would really love to travel to the beach with my partner..." rows="4" cols="30"></textarea>
+            </label>
+          </fieldset>
+
+          <input type="submit" value="Submit" id="submit">
+
+        </form>
+      </div>
+    </div>
+  </body>
