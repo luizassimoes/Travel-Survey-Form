@@ -45,7 +45,7 @@ fieldset {
 
 input[type="submit"] {
   display: block;
-  width: 60%;
+  width: 100px;
   margin: 1em auto;
   height: 2em;
   font-size: 1.1rem;
